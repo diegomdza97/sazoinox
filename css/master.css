@@ -1,0 +1,153 @@
+/* reglas
+selectores
+declaraciones
+propiedades
+valores */
+
+/* selectores:
+clase: class="nombre de grupo en clase" (grupo de elementos) se selecciona con: .
+id: id="nombre de elemento" (único) se selecciona con: # */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 75px;
+  line-height: 1;
+  margin-left: 80px;
+  margin-top: 0;
+  /* font-weight: normal; (grosor de fuente) */
+  /* letter-spacing: 5px; (espacio entre letras); */
+  /* text-transform: uppercase; (transformar a mayusculas etc. recomendación hacerlo desde css para SEO) */
+}
+
+h1 strong {
+  color: #EF5D24;
+  }
+
+  .slider {
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 200%;
+  margin: 0;
+
+	animation: cambio 10s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	40% {margin-left: 0;}
+
+	50% {margin-left: -100%;}
+	100% {margin-left: -100%;}
+
+	/* 50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;} */
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  /* border: 1px solid black; */
+  padding: 3px;
+  border-radius: 2px;
+  /* background-color: #fff; */
+}
+.link-container {
+  margin: 10px;
+}
+
+.menu-list {
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.header {
+  /* background-color: #e7bb81; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header a {
+  color: #000;
+  /* vertical-align: middle; */
+}
+
+.header img {
+  vertical-align: middle;
+}
+
+.logo {
+  margin: 0;
+}
+
+.serch-box {
+  height: 15px;
+}
+
+.footer {
+  display: flex;
+  background-color: #adadad;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer a {
+  color: #fff;
+}
+
+.footer img {
+  vertical-align: middle;
+  margin-left: 5px;
+  margin-bottom: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    border: 10px solid black;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+/* ejemplo de uso de flexbox */
+
+/* .flexbox {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: 1px solid black;
+
+para no alterar el tamaño fijo
+  flex-shrink: 0;
+} */
